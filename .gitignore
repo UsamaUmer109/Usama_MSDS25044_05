@@ -1,0 +1,25 @@
+# Dataset — do NOT upload to GitHub
+data/
+*.pkl
+cifar-10-batches-py/
+ 
+# Model checkpoints — upload to Google Drive instead
+models/
+*.pt
+*.pth
+*.ckpt
+ 
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+ 
+# OS files
+.DS_Store
+Thumbs.db
+ 
+# Virtual environments
+venv/
+env/
+.env
