@@ -1,14 +1,14 @@
 """
 MSDS25044_05_task2_augmentations.py
 -------------------------------------
-Task 2: Understanding Augmentations (8 Marks)
+Task 2: Understanding Augmentations 
 
 Visualises 10 CIFAR-10 images in the format required by the assignment:
   Original Image | Augmented View 1 | Augmented View 2
   Original Image | Augmented View 1 | Augmented View 2
   ...
 
-Also implements TwoViewTransform (required to be written yourself).
+Also implements TwoViewTransform which applies the same random augmentation pipeline twice to the same image, producing two different augmented views. This is the core idea behind SimCLR's augmentations.
 
 Output:
   results/augmentation_examples.png
@@ -42,8 +42,14 @@ CLASSES    = ["airplane","automobile","bird","cat","deer",
 
 
 # ════════════════════════════════════════════════════════════════════════════
-# TwoViewTransform is the core idea behind SimCLR's augmentations. It applies the same
-# random transform TWICE to the same image, producing two different augmented views.
+# TwoViewTransform — core SimCLR data augmentation wrapper
+# Applies the same transform TWICE independently to produce two different
+# augmented views of the same image.
+#
+# Why two views?
+#   - Both views come from the same image  → treated as a positive pair
+#   - Both look different                  → forces encoder to learn semantic
+#                                            content, not pixel-level patterns
 # ════════════════════════════════════════════════════════════════════════════
 class TwoViewTransform:
 
