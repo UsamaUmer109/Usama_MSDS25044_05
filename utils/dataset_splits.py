@@ -4,6 +4,7 @@ This file intentionally does not implement SimCLR. It only helps students load
 CIFAR-10 subsets from the instructor-provided split files.
 """
 
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -39,6 +40,7 @@ def get_cifar10_subset(
         target_transform: Optional label transform.
         download: Download CIFAR-10 if not present.
     """
+
     dataset = CIFAR10(
         root=str(data_root),
         train=train,

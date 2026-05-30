@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+
 import os
 import random
 
@@ -16,6 +17,7 @@ def set_seed(seed: int = 2026, deterministic: bool = True) -> None:
         seed: Random seed.
         deterministic: If True, use deterministic CuDNN behavior when possible.
     """
+
     os.environ["PYTHONHASHSEED"] = str(seed)
     random.seed(seed)
     np.random.seed(seed)
