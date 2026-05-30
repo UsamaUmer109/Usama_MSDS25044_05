@@ -16,12 +16,12 @@ Usama_MSDS25044_05/
 ├── utils/
 │   ├── seed.py
 │   └── dataset_splits.py
-├── rollNumber_05_task1_supervised.py
-├── rollNumber_05_task2_augmentations.py
-├── rollNumber_05_task3_similarity.py    (coming in Checkpoint 2)
-├── rollNumber_05_task4_simclr.py        (coming in Checkpoint 2)
-├── rollNumber_05_task5_linear_probe.py  (coming in Checkpoint 4)
-├── rollNumber_05_task6_finetune.py      (coming in Checkpoint 4)
+├── MSDS25044_05_task1_supervised.py
+├── MSDS25044_05_task2_augmentations.py
+├── MSDS25044_05_task3_similarity.py    
+├── MSDS25044_05_task4_simclr.py        
+├── MSDS25044_05_task5_linear_probe.py  
+├── MSDS25044_05_task6_finetune.py      
 ├── requirements.txt
 └── Report.pdf
 ```
@@ -31,7 +31,7 @@ Usama_MSDS25044_05/
 pip install -r requirements.txt
 ```
 
-## ⚠️ IMPORTANT RULES
+## IMPORTANT RULES
 - Do NOT add `data/` or `models/` to GitHub
 - Upload model checkpoints to Google Drive and include shareable links in this README
 - Make regular, meaningful commits — one big commit = rejection
@@ -55,21 +55,21 @@ python utils/dataset_splits.py data/cifar-10-batches-py splits
 
 **Step 2: Run supervised baseline (quick 1-epoch test)**
 ```bash
-python rollNumber_05_task1_supervised.py \
+python MSDS25044_05_task1_supervised.py \
   --data-dir data/cifar-10-batches-py \
   --epochs 1 --batch-size 64
 ```
 
 **Step 2b: Full run (50 epochs)**
 ```bash
-python rollNumber_05_task1_supervised.py \
+python MSDS25044_05_task1_supervised.py \
   --data-dir data/cifar-10-batches-py \
   --epochs 50 --batch-size 64
 ```
 
 **Step 3: Generate augmentation examples**
 ```bash
-python rollNumber_05_task2_augmentations.py \
+python MSDS25044_05_task2_augmentations.py \
   --data-dir data/cifar-10-batches-py
 ```
 
@@ -77,7 +77,7 @@ python rollNumber_05_task2_augmentations.py \
 
 ### Checkpoint 2 — SimCLR Components (Day 6)
 ```bash
-python rollNumber_05_task4_simclr.py \
+python MSDS25044_05_task4_simclr.py \
   --data-dir data/cifar-10-batches-py --mode components
 ```
 
@@ -89,8 +89,8 @@ python rollNumber_05_task4_simclr.py \
 
 ### Checkpoint 4 — Linear Probe + Fine-tune (Day 12)
 ```bash
-python rollNumber_05_task5_linear_probe.py --data-dir data/cifar-10-batches-py
-python rollNumber_05_task6_finetune.py --data-dir data/cifar-10-batches-py
+python MSDS25044_05_task5_linear_probe.py --data-dir data/cifar-10-batches-py
+python MSDS25044_05_task6_finetune.py --data-dir data/cifar-10-batches-py
 ```
 
 ---
