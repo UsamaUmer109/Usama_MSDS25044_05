@@ -36,8 +36,8 @@ pip install -r requirements.txt
 - Upload model checkpoints to Google Drive and include shareable links in this README
 - Make regular, meaningful commits — one big commit = rejection
 
-## Google Drive Links (fill these in after training)
-- supervised_best.pt: _____________
+## Google Drive Links (After training)
+- supervised_best.pt: https://drive.google.com/file/d/1Ee-xq2Snf5sNY4jxv8hs8u_x5fHqlUMY/view?usp=drive_link
 - simclr_encoder.pt: _____________
 - linear_probe.pt: _____________
 - finetuned_model.pt: _____________
