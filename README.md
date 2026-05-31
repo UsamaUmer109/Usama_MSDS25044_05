@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 ## Google Drive Links (After training)
 - supervised_best.pt: https://drive.google.com/file/d/1Ee-xq2Snf5sNY4jxv8hs8u_x5fHqlUMY/view?usp=drive_link
-- simclr_encoder.pt: _____________
+- simclr_encoder.pt: https://drive.google.com/file/d/1YX0PcCIiIt4K-a04P_9-qmcUch3QYCXL/view?usp=drive_link
 - linear_probe.pt: _____________
 - finetuned_model.pt: _____________
 
@@ -83,7 +83,7 @@ python MSDS25044_05_task4_simclr.py \
 
 ### Checkpoint 3 — SimCLR Pretraining (Day 9)
 ```bash
-python rollNumber_05_task4_simclr.py \
+python MSDS25044_05_task4_simclr.py \
   --data-dir data/cifar-10-batches-py --epochs 50
 ```
 
