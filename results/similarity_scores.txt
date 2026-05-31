@@ -1,0 +1,4 @@
+same_view_similarity_before=0.987522
+different_image_similarity_before=0.985884
+same_view_similarity_after=0.869399
+different_image_similarity_after=0.336167
