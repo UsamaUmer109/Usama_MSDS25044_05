@@ -1,0 +1,2 @@
+random_linear_probe_test_acc=0.236600
+simclr_linear_probe_test_acc=0.748700
