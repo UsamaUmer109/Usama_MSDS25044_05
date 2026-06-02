@@ -236,5 +236,6 @@ def main():
     print(f"  {'SimCLR encoder + fine-tuning':<40} {metrics['simclr_finetune_test_acc']*100:>9.2f}%")
     print("="*65)
 
+
 if __name__ == "__main__":
     main()
