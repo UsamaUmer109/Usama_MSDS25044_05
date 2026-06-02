@@ -44,7 +44,7 @@ Usama_MSDS25044_05/
 - `supervised_best.pt`: https://drive.google.com/file/d/1Ee-xq2Snf5sNY4jxv8hs8u_x5fHqlUMY/view?usp=drive_link
 - `simclr_encoder.pt`: https://drive.google.com/file/d/1YX0PcCIiIt4K-a04P_9-qmcUch3QYCXL/view?usp=drive_link
 - `linear_probe.pt`: https://drive.google.com/file/d/1j7T00N_OlWBXUpuHMG1ukSvaGsnbZq3N/view?usp=drive_link
-- `finetuned_model.pt`: _____________
+- `finetuned_model.pt`: https://drive.google.com/file/d/1xwKCFP2JmL5C-sy_BsAsYO7PEPRnJaFc/view?usp=sharing
 
 ---
 
@@ -103,9 +103,10 @@ Outputs: `graphs/linear_probe_accuracy.png`
 
 ### Task 7 — Fine-tuning
 ```bash
-python MSDS25044_05_task7_finetune.py \
+%cd /content/Usama_MSDS25044_05
+!python MSDS25044_05_task7_finetune.py \
   --data-dir data \
-  --simclr-ckpt models/simclr_encoder.pt
+  --simclr-ckpt models/simclr_encoder_fixed.pt
 ```
 Outputs: `graphs/finetuning_accuracy.png`, `models/finetuned_model.pt`
 
@@ -144,10 +145,9 @@ Outputs: `results/random_encoder_pca_or_tsne.png`, `results/simclr_encoder_pca_o
 
 | Model | Test Accuracy |
 |---|---|
-| Supervised ResNet-18 (10% labels) | ___ % |
 | Random encoder + linear probe | 23.66% |
 | SimCLR encoder + linear probe | 74.87% |
-| SimCLR encoder + fine-tuning | ___ % |
+| SimCLR encoder + fine-tuning | 70.06% |
 
 ---
 
